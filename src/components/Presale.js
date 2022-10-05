@@ -85,8 +85,8 @@ function Presale() {
     const buyToken = async (price, signer) => {
         try {
             const contract = new ethers.Contract(crowdsaleAddress, CROWDSALE_ABI, signer);
-            
-            if (bnbBalance < ethPrice.current.value) {
+            console.log(parseFloat(bnbBalance) < parseFloat(ethPrice.current.value))
+            if (parseFloat(bnbBalance) < parseFloat(ethPrice.current.value)) {
                 setLoading(false);
                 Swal.fire({
                     icon: 'error',

@@ -14,7 +14,7 @@ const providerOptions = {
       package: WalletConnectProvider, // required
       options: {
         rpc: {
-          56: "https://api.avax-test.network/ext/bc/C/rpc"
+          43113: "https://api.avax-test.network/ext/bc/C/rpc"
         }
       }
     }

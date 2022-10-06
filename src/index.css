@@ -3,14 +3,14 @@
 @tailwind utilities;
 
 body {
-    /* background: rgb(0,0,0);
+    background: rgb(0,0,0);
     background: -moz-linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(17,37,68,1) 52%, rgba(1,43,109,1) 100%);
     background: -webkit-linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(17,37,68,1) 52%, rgba(1,43,109,1) 100%);
     background: linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(17,37,68,1) 52%, rgba(1,43,109,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#ff9100",GradientType=1);
-    color: white; */
-    background-color: #5c3b17;
-background-image: linear-gradient(62deg, #5c3b17 0%, #cb903f 94%);
+    color: white;
+    /* background-color: #5c3b17;
+background-image: linear-gradient(62deg, #5c3b17 0%, #cb903f 94%); */
 
 
 

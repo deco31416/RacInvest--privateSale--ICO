@@ -82,7 +82,7 @@ const HeaderComponent = ({setError, setErrMsg}) => {
     }, [account]);
     return (
         <div className="w-full flex items-center flex-col">
-            <div className="max-w-[250px] p-2">
+            <div className="max-w-[250px]  w-48 my-8 rounded-full bg-white shadow-[0_0_70px_0.2em_rgba(255,255,255,0.35)]">
                 <img src={logo} alt="logo" />
             </div>
             <div className="mt-4 sm:mt-0">

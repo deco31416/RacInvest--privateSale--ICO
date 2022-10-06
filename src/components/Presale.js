@@ -82,6 +82,14 @@ function Presale() {
 
     }
 
+    const test = () => {
+        Swal.fire({
+            title: 'Congratulations!',
+            text: 'Your Token purchase has been completed successfully',
+            confirmButtonColor: '#cb903f'
+          })
+    }
+
     const buyToken = async (price, signer) => {
         try {
             const contract = new ethers.Contract(crowdsaleAddress, CROWDSALE_ABI, signer);
@@ -100,9 +108,9 @@ function Presale() {
             await transaction.wait();
             setLoading(false);
             Swal.fire({
-                icon: 'success',
-                title: 'Congrates',
-                text: 'Token purchase has been done successfully'
+                icon: '',
+                title: 'Congratulations!',
+                text: 'Your Token purchase has been completed successfully'
               })
         } catch (e) {
             setLoading(false);
@@ -114,7 +122,7 @@ function Presale() {
         <div className="my-11 p-7 flex items-center flex-col md:flex-row justify-between border border-white border-opacity-20 rounded-3xl shadow-xl ">
             <div className="md:pl-8 text-center md:text-left md:mr-2">
                 <h1 className="text-base sm:text-xl font-bold uppercase text-[#5c3b17]" >Public Sale</h1>
-                <h1 className="text-2xl sm:text-4xl font-bold uppercase text-white" >FracInvest Token</h1>
+                <h1 className="text-2xl sm:text-4xl font-bold uppercase text-white" style={{textShadow: '0 0 16em #fff, 0 0 0.15em #a3afda, 0 0 1.2em #fff, 0 0 10em #fffdfd'}}>FracInvest Token</h1>
                 <button className='mt-5 px-6 py-2 bg-[#5c3b17] text-white rounded font-bold hover:bg-[#cb903f]' onClick={() => addToken()}>Add Token to your MetaMask</button>
                 {/* <div className='mt-3 hidden md:block'>
                 <p className="text-lg">For Progress, Investment & Success</p>
